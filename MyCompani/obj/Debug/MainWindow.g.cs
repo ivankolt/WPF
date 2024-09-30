@@ -48,14 +48,6 @@ namespace MyCompani {
         #line default
         #line hidden
         
-        
-        #line 22 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ListView MyListView;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -104,9 +96,6 @@ namespace MyCompani {
             
             #line default
             #line hidden
-            return;
-            case 4:
-            this.MyListView = ((System.Windows.Controls.ListView)(target));
             return;
             }
             this._contentLoaded = true;

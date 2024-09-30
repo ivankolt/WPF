@@ -24,5 +24,14 @@ namespace MyCompani
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MyTabControl.SelectedItem = MyTabControl.Items[1];
+        }
+        private void ButtonTwo_Click(object sender, RoutedEventArgs e)
+        {
+            MyTabControl.SelectedItem = MyTabControl.Items[0];
+        }
     }
 }

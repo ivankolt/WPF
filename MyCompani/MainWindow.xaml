@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyCompani"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Иван Страховал" Height="1080" Width="1920 " Icon="1456942.png">
     <Grid>
-        
+        <TabControl  x:Name="MyTabControl"  HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+            <TabItem Header="Главаня" Margin="0" Width="180" Height="70" FontSize="20" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Background="#FFF34040">
+                <Grid Background="White">
+                    <Image Source ="Images/Ynas.png" HorizontalAlignment="Center" Height="616"  VerticalAlignment="Center" Width="828" Margin="542,88,544,298"/>
+                    <Button Content="Подробнее"  Margin="852,777,854,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="208" Height="97" FontSize="36" FontWeight="Normal" Background="#FFED1C24" Click="Button_Click"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Общее" Width="180" Height="70" FontSize="20" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Background="#FFF34040">
+                <Grid Background="White">
+                    <Button Content="Обратно"  Margin="0,877,1706,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="208" Height="97" FontSize="36" FontWeight="Normal" Background="#FFED1C24" Click="ButtonTwo_Click"/>
+                    <ListView Name="MyListView" ItemsSource="{Binding Images}" Margin="10,108,0,394">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding}" Width="100" Height="100" Margin="5"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>
